@@ -1,0 +1,118 @@
+{
+    "id": "18e633f4a3980ddb",
+    "threadId": "18e633f4a3980ddb",
+    "labelIds": [
+        "UNREAD",
+        "CATEGORY_UPDATES",
+        "INBOX"
+    ],
+    "snippet": "327791 is your login OTP.",
+    "payload": {
+        "mimeType": "text/html",
+        "headers": [
+            {
+                "name": "Delivered-To",
+                "value": "abdullah@monhna.com"
+            },
+            {
+                "name": "Received",
+                "value": "by 2002:a05:6a21:3985:b0:1a3:576c:315c with SMTP id ad5csp711663pzc;        Thu, 21 Mar 2024 16:01:17 -0700 (PDT)"
+            },
+            {
+                "name": "X-Google-Smtp-Source",
+                "value": "AGHT+IGa4u3/KFp2z1a6ThPx0UQgKXyLfSMmtbp5h23HxDHBvB6tx6FtqnvPC3Dsqbcv+Ahy1xbU"
+            },
+            {
+                "name": "X-Received",
+                "value": "by 2002:ac8:574c:0:b0:42e:cc99:2d10 with SMTP id 12-20020ac8574c000000b0042ecc992d10mr649299qtx.27.1711062076515;        Thu, 21 Mar 2024 16:01:16 -0700 (PDT)"
+            },
+            {
+                "name": "ARC-Seal",
+                "value": "i=1; a=rsa-sha256; t=1711062076; cv=none;        d=google.com; s=arc-20160816;        b=0sOGn6ThHZPL0+EneFO++v3mPBd8JDHEMHRT1MBc6k/YA6wUI0lAKwjMxY5AXuDH1V         4Z8/eFD2JvOH+wuxuNYX+7nsguQdH0eptnG8m53sZrkUQd+yYtHV37ePtT/ZkfNWfNjY         /jeaMm1vIaM9it4jW31xYT+VaDVJ2Scjo6qCSNTJbSf7a7/fe33XL+8wuW1FicNyRKF/         oROogKuK2VfbXfyXo7pykQZiZY515XuHbcgYNtr1NNNq4kZCfNX0sjbApHDFJ8NSNoAx         Qh3EhEiMemCZv2s8Po3v+dNJ2AnyUEkaGhBlB8ExT9wgwoOKVgrf3WkRWRVVVw/Mn3BI         I3FQ=="
+            },
+            {
+                "name": "ARC-Message-Signature",
+                "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;        h=to:reply-to:subject:message-id:mime-version:from:date         :content-transfer-encoding:dkim-signature;        bh=HWaCm6DH1N2DSHi+QP/EfoIqM8Q7Eo1bjb524nIBeno=;        fh=DFrnwnsURrW4W6QVQJ5QrDUVa6mOsajERvDdpYxeP1c=;        b=GzePh87V2QWWv5lNg81/7VMVe13OPDvHypYArX04NVMXHaD5b+vFGIsnBF3UX8xrZL         dg52E+02L3gr2NBSn+2FmkINTO+Hw3x/Ir6XxFmtrmsa8Mb3FoELm5X0faiaVO+CPWGc         OuhyANxV9sZ6Z9kRWBi+EnCn7tZIx0S5QL8sdZsg0C3LsuY/XGgzHvfiWVOf/D+qfLz+         Bp54a2u+txIL6f5YYYJbHJ+Kx062LL9k8VBZDlu4EEobq0Z7wJxxNOv2Z5IOQ/bBRHWl         tIDrh7g64q44EiwwQ07g1YtlXVJxvugAghDRKNGvZDYl5QSmVZIzdO4PaJZF2GgLmm2P         Z9Ag==;        dara=google.com"
+            },
+            {
+                "name": "ARC-Authentication-Results",
+                "value": "i=1; mx.google.com;       dkim=pass header.i=@noon.com header.s=s1 header.b=P3NJGkLa;       spf=pass (google.com: domain of bounces+4970074-405e-abdullah=monhna.com@em.noon.com designates 168.245.120.193 as permitted sender) smtp.mailfrom=\"bounces+4970074-405e-abdullah=monhna.com@em.noon.com\";       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=noon.com"
+            },
+            {
+                "name": "Return-Path",
+                "value": "<bounces+4970074-405e-abdullah=monhna.com@em.noon.com>"
+            },
+            {
+                "name": "Received",
+                "value": "from o6.em.support.noon.com (o6.em.support.noon.com. [168.245.120.193])        by mx.google.com with ESMTPS id z11-20020a05622a060b00b00430fad5f5e4si830886qta.61.2024.03.21.16.01.15        for <abdullah@monhna.com>        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);        Thu, 21 Mar 2024 16:01:16 -0700 (PDT)"
+            },
+            {
+                "name": "Received-SPF",
+                "value": "pass (google.com: domain of bounces+4970074-405e-abdullah=monhna.com@em.noon.com designates 168.245.120.193 as permitted sender) client-ip=168.245.120.193;"
+            },
+            {
+                "name": "Authentication-Results",
+                "value": "mx.google.com;       dkim=pass header.i=@noon.com header.s=s1 header.b=P3NJGkLa;       spf=pass (google.com: domain of bounces+4970074-405e-abdullah=monhna.com@em.noon.com designates 168.245.120.193 as permitted sender) smtp.mailfrom=\"bounces+4970074-405e-abdullah=monhna.com@em.noon.com\";       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=noon.com"
+            },
+            {
+                "name": "DKIM-Signature",
+                "value": "v=1; a=rsa-sha256; c=relaxed/relaxed; d=noon.com; h=content-transfer-encoding:content-type:from:mime-version:subject: reply-to:to:cc:content-type:from:subject:to; s=s1; bh=HWaCm6DH1N2DSHi+QP/EfoIqM8Q7Eo1bjb524nIBeno=; b=P3NJGkLaHUDrnIgTGY/RaM59LmiLM2B3fTS+jBBtw1ZvMR6DnRA2f3HnqfA+BVs/eucJ ShtouYMjPKgsQu80jhTRjH8si7SCPk3ILEAfSoFCujJLORp1hfyURQnXSX0X/O19qYoS37 TXlseBkGToat9/DVTPYCexncQWJNxUD7G4At5mAVyCOUApd6WNnrtytQzi7mmCrWtAEpU3 veVYDTAU3QSn4oq3DZqz4KsNqXQored+WJuqgIrg73UqxZ37sNTY6MyVXLyGgmLDbPL1/7 gY5ibyrgsEucJ8acju4bt+hpy5akSBobOKkZ7gxFvCcaI49un0rtOO6oYg6pXxHw=="
+            },
+            {
+                "name": "Received",
+                "value": "by filterdrecv-canary-5f9556768c-sdhwr with SMTP id filterdrecv-canary-5f9556768c-sdhwr-1-65FCBC39-1B5        2024-03-21 23:01:13.930715058 +0000 UTC m=+267453.575885167"
+            },
+            {
+                "name": "Received",
+                "value": "from NDk3MDA3NA (unknown) by geopod-ismtpd-4 (SG) with HTTP id qWIdeD7WS7-Q9UevMF7Vkw Thu, 21 Mar 2024 23:01:13.885 +0000 (UTC)"
+            },
+            {
+                "name": "Content-Transfer-Encoding",
+                "value": "quoted-printable"
+            },
+            {
+                "name": "Content-Type",
+                "value": "text/html; charset=us-ascii"
+            },
+            {
+                "name": "Date",
+                "value": "Thu, 21 Mar 2024 23:01:13 +0000 (UTC)"
+            },
+            {
+                "name": "From",
+                "value": "noon <noreply@noon.com>"
+            },
+            {
+                "name": "Mime-Version",
+                "value": "1.0"
+            },
+            {
+                "name": "Message-ID",
+                "value": "<qWIdeD7WS7-Q9UevMF7Vkw@geopod-ismtpd-4>"
+            },
+            {
+                "name": "Subject",
+                "value": "Noon: Verify your login"
+            },
+            {
+                "name": "Reply-To",
+                "value": "noreply@noon.com"
+            },
+            {
+                "name": "X-SG-EID",
+                "value": "u001.wkHVNaIqeYlnsGALKBSuZ7bp473tWFpQpsW9J9vWjLmgmUoEZy8ZKzXWLTcVaKzZVLb2e5CocxzB7OcXvnCZ6bBHErbvb/rWCyN93FHZe5GuJr8SiOYZIg/P8W8T5UMDvFhwQlhXvpqqwDHPOcEvs//arv2AeDYs8wDBtZSOttrZWq8cSFJfKlRAviqnWXpb0b8Wr+y1XcObq4PQSew59J4lMFsqu5DHaIF+UjSHfpMW+HsSp4TRAiRzUtK51gKq"
+            },
+            {
+                "name": "To",
+                "value": "abdullah@monhna.com"
+            },
+            {
+                "name": "X-Entity-ID",
+                "value": "u001.8CYJOfwjI4XLwppwnDtRlA=="
+            }
+        ]
+    },
+    "sizeEstimate": 5488,
+    "historyId": "3662916",
+    "internalDate": "1711062073000"
+}

@@ -1,0 +1,123 @@
+{
+    "id": "18e62dc00585c629",
+    "threadId": "18e62dc00585c629",
+    "labelIds": [
+        "UNREAD",
+        "IMPORTANT",
+        "CATEGORY_PERSONAL",
+        "INBOX"
+    ],
+    "snippet": "سلام عليكم ورحمة الله وبركاته إلى: فريق منحنى التسويقي. أود إرسال ملف سيرتي الذاتية كملف منفصل، وذلك بعد إرسال بياناتي في رابط الوظائف الشاغرة ككاتبة محتوى. شاكرة لكم حسن التفهم. مع تحياتي الكاتبة/ رغد",
+    "payload": {
+        "mimeType": "multipart/alternative",
+        "headers": [
+            {
+                "name": "Delivered-To",
+                "value": "hire@monhna.com"
+            },
+            {
+                "name": "Received",
+                "value": "by 2002:a05:6a21:3985:b0:1a3:576c:315c with SMTP id ad5csp669329pzc;        Thu, 21 Mar 2024 14:12:49 -0700 (PDT)"
+            },
+            {
+                "name": "X-Received",
+                "value": "by 2002:adf:fa45:0:b0:33e:9de3:9037 with SMTP id y5-20020adffa45000000b0033e9de39037mr228312wrr.59.1711055569353;        Thu, 21 Mar 2024 14:12:49 -0700 (PDT)"
+            },
+            {
+                "name": "ARC-Seal",
+                "value": "i=1; a=rsa-sha256; t=1711055569; cv=none;        d=google.com; s=arc-20160816;        b=A+m1/6tGvBnrpmJ4JxNKdCzHgUWLLkd3tKwFWaIw8gAPz2gPvL/nOS4Q8/6uWg5enC         SxQAj1/qrxfOaQAE3nFJFaCbXSbk/CrqBUMn2xpOVppJ+KprYqXz62cTzhafEJ+1l7Yc         6NtD5J012UDtpwBTG6OdNVdldUv52G8O4/jP+3xC+Td0FxwPk/x65W0bJXsmQyEnsT//         NR7JMYrr7eid3qMxkqxCKuoIWWGJXTEHTLBcsh3GBUTSOG6NT5L8RUCRkpQjdD8bJCWR         hEadEtJfEIJphA3AJ1kj/MYuU6LnEs27idn9FU8cXjujURYfeFHOn/OLXTlhXQBMLB+G         ngUg=="
+            },
+            {
+                "name": "ARC-Message-Signature",
+                "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;        h=to:message-id:subject:date:mime-version:from         :content-transfer-encoding:dkim-signature;        bh=qhyRtWv6geEMaIGkQgFT3vwuM5ICxVDfZi0ex8bHFhM=;        fh=OridusfcXgtsYsqTb0lAfs3yQO+BI338FV6+0czJIt4=;        b=lJLmz1P15KhPzNq7Yr63iZ/du+gAHmknrHpkzCUbj/9uV4PxD9FivpUOBE8/+eaid1         4cAwN/Zt6xWsa7i8u75flbJ2yoYhsqou7c3nyVphsRyDoVN2BdrrvDTAoFiVSZe6Ukna         lYVd4JUi0xBGgDmC1nneK7bVt3gOmgu2YjgmreZh/q1Vr6MFJEKII0+J6ro5EFgz++tS         g4/52Qr5xDX0cbT1+y33WKpK1KBF5gODCZdLnWS3oOLAZDz6YXCzwv0D81vZlrzQyjsK         E+oKi0VQtBeyC16nscCtsGD9EHpQcSRf9rFyQUxjwPj6dMOw72G8Jk0vVWOJt9DNxAlS         s5fg==;        dara=google.com"
+            },
+            {
+                "name": "ARC-Authentication-Results",
+                "value": "i=1; mx.google.com;       dkim=pass header.i=@gmail.com header.s=20230601 header.b=QFl8zHI5;       spf=pass (google.com: domain of rghd12360@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=rghd12360@gmail.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com"
+            },
+            {
+                "name": "Return-Path",
+                "value": "<rghd12360@gmail.com>"
+            },
+            {
+                "name": "Received",
+                "value": "from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])        by mx.google.com with SMTPS id j17-20020adfb311000000b0033ec8aa8b62sor118814wrd.1.2024.03.21.14.12.49        for <Hire@monhna.com>        (Google Transport Security);        Thu, 21 Mar 2024 14:12:49 -0700 (PDT)"
+            },
+            {
+                "name": "Received-SPF",
+                "value": "pass (google.com: domain of rghd12360@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"
+            },
+            {
+                "name": "Authentication-Results",
+                "value": "mx.google.com;       dkim=pass header.i=@gmail.com header.s=20230601 header.b=QFl8zHI5;       spf=pass (google.com: domain of rghd12360@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=rghd12360@gmail.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com"
+            },
+            {
+                "name": "DKIM-Signature",
+                "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20230601; t=1711055568; x=1711660368; darn=monhna.com;        h=to:message-id:subject:date:mime-version:from         :content-transfer-encoding:from:to:cc:subject:date:message-id         :reply-to;        bh=qhyRtWv6geEMaIGkQgFT3vwuM5ICxVDfZi0ex8bHFhM=;        b=QFl8zHI5OtgwZwuACCC42iV2WJUTOfXOlBOUKdvpWZbxVwoQ7zTIPfpmi4cDTG+FoM         Gvm01V2rnEyac9mX4gOmkFkOrcQejfMzXOlCQYUiU8+57yEq+fCxhQiaahoCzP4pP63Z         Sj2QNnupTNF9wWpT5fGV1tcCKMGkB/KAVSd+DGuRcR+fVZuXXjtjiHb8uS7pBKj2OXOs         KkH9SAnWffbJiDtXqKulIVvdNcn1iDbKVk3P7GVXKbKgZ8XL3tKSFjWTg1Y3J/WbrEw3         wjcoPDrrUi16OAefsTXxSMeOkNBXx1hixI027mbFCODAPhjSlUaA9lbLVvclIxksr+BV         MVRw=="
+            },
+            {
+                "name": "X-Google-DKIM-Signature",
+                "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20230601; t=1711055568; x=1711660368;        h=to:message-id:subject:date:mime-version:from         :content-transfer-encoding:x-gm-message-state:from:to:cc:subject         :date:message-id:reply-to;        bh=qhyRtWv6geEMaIGkQgFT3vwuM5ICxVDfZi0ex8bHFhM=;        b=DpO1peEgARM9TsEu2Io0FbIymJX4xGmo9tgB/ZuVrFp2msZzQzzj7AY55GBH8BqKtC         28IWljtnNj6btnY+X0v7220gD/3wQ9Ob5255It1nIdViHVBaAK1BfV8r/hNyI69OHltC         Iy39dGwoor8xIJ9/x/DlG1Uqcmfs+coI6RPeMhhipH0Nf9jUZP/rlgF3t1b0dt1AbhfA         EmnaYf/j+i9Y4mcBb25twFXJN4dJ0Ra9Ch/EIDrEe7UcXa23zivRMa4Pt8CckTPSk8Ir         7yLHoXfPEIWz+JDRhge7+Zc38IL5kuSjHXMIU2fLpWVz6rig0qEU1chDIhMRe6OuYYF4         Ndug=="
+            },
+            {
+                "name": "X-Gm-Message-State",
+                "value": "AOJu0YyoBUL3Y1Kpzbp6SzVKs6cqYQrdqbSO13yz9qBpXPmJiD4DF2+X SwBcRXAKBIJ4I1hHyOoj9KHTfNvdaRvp6Z/EHcKGzysZk7VUJ+5peRYz3I2O"
+            },
+            {
+                "name": "X-Google-Smtp-Source",
+                "value": "AGHT+IEeOz7gu4IKfM/Qa2DCAN0YiTtq8HCwdFqL4fThg8OvRAGmStJZGcQmD93YAbiit5r/kfB01Q=="
+            },
+            {
+                "name": "X-Received",
+                "value": "by 2002:adf:ec4d:0:b0:33e:c070:9574 with SMTP id w13-20020adfec4d000000b0033ec0709574mr219119wrn.20.1711055567490;        Thu, 21 Mar 2024 14:12:47 -0700 (PDT)"
+            },
+            {
+                "name": "Return-Path",
+                "value": "<rghd12360@gmail.com>"
+            },
+            {
+                "name": "Received",
+                "value": "from smtpclient.apple ([51.36.78.154])        by smtp.gmail.com with ESMTPSA id bu28-20020a056000079c00b0034082c782c0sm518051wrb.0.2024.03.21.14.12.25        for <Hire@monhna.com>        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);        Thu, 21 Mar 2024 14:12:45 -0700 (PDT)"
+            },
+            {
+                "name": "Content-Type",
+                "value": "multipart/alternative; boundary=Apple-Mail-DF09B523-BE78-4C1C-91A5-20A1072C98FA"
+            },
+            {
+                "name": "Content-Transfer-Encoding",
+                "value": "7bit"
+            },
+            {
+                "name": "From",
+                "value": "\"رغد احمد\" <rghd12360@gmail.com>"
+            },
+            {
+                "name": "Mime-Version",
+                "value": "1.0 (1.0)"
+            },
+            {
+                "name": "Date",
+                "value": "Fri, 22 Mar 2024 00:12:13 +0300"
+            },
+            {
+                "name": "Subject",
+                "value": "ملف سيرة ذاتية منفصلة"
+            },
+            {
+                "name": "Message-Id",
+                "value": "<DB2DB48A-D02A-4DD9-B8B4-16451B03BF3B@gmail.com>"
+            },
+            {
+                "name": "To",
+                "value": "Hire@monhna.com"
+            },
+            {
+                "name": "X-Mailer",
+                "value": "iPhone Mail (19H364)"
+            }
+        ]
+    },
+    "sizeEstimate": 377423,
+    "historyId": "3662843",
+    "internalDate": "1711055533000"
+}
