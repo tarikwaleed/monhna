@@ -10,7 +10,8 @@ load_dotenv(find_dotenv(), override=True)
 SCOPES = ["https://mail.google.com/"]
 SERVICE_ACCOUNT_FILE = os.getenv("SERVICE_ACCOUNT_FILE_PATH")
 
-subject = "Abdullah@monhna.com"
+
+subject = "Noon-Affiliate@monhna.com"
 credentials = service_account.Credentials.from_service_account_file(
     filename=SERVICE_ACCOUNT_FILE, scopes=["https://mail.google.com/"], subject=subject
 )

@@ -96,7 +96,8 @@ def main():
     url_v1 = "https://login.noon.partners/en/?domain=https://ambassadors.noon.partners/en/coupons"
     url_v2 = "https://ambassadors.noon.partners/en/coupons?project=PRJ65632"
 
-    email = "Abdullah@monhna.com"
+    # email = "Abdullah@monhna.com"
+    email = "Noon-Affiliate@monhna.com"
 
     next_button_class_name = "signInBtn"
     continue_button_class_name = "sc-2acab29e-0"
@@ -106,7 +107,7 @@ def main():
     open_page(driver, url_v2)
     enter_email(driver, email)
     click_button(driver, class_name=continue_button_class_name)
-    time.sleep(6)
+    time.sleep(8)
     otp = get_otp()
     enter_otp_v2(driver=driver, otp=otp)
     click_button(driver, class_name=continue_button_class_name)
