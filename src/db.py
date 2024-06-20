@@ -21,7 +21,7 @@ class Coupon(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     request_id = db.Column(db.String)
     prefix = db.Column(db.String)
-
+    coupon_cde=db.Column(db.String)
     advertiser = db.Column(db.String)
     num_coupons = db.Column(db.Integer)
     status = db.Column(db.String)
@@ -65,3 +65,4 @@ def populate_database():
 if __name__ == "__main__":
     with app.app_context():
         db.create_all()
+    populate_database()
