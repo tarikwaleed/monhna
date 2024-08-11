@@ -8,7 +8,12 @@ import os
 load_dotenv(find_dotenv(), override=True)
 
 SCOPES = ["https://mail.google.com/"]
-SERVICE_ACCOUNT_FILE = os.getenv("SERVICE_ACCOUNT_FILE_PATH")
+env=os.getenv("ENV")
+if env == 'local':
+    SERVICE_ACCOUNT_FILE = os.getenv("SERVICE_ACCOUNT_FILE_PATH")
+else:
+    SERVICE_ACCOUNT_FILE = os.getenv("LIVE_SERVICE_ACCOUNT_FILE_PATH")
+
 
 
 subject = "Noon-Affiliate@monhna.com"
@@ -39,4 +44,3 @@ def get_otp():
         print("An error occurred: %s" % error)
 
 
-print(get_otp())

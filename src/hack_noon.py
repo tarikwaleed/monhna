@@ -10,6 +10,7 @@ from gmail_access import get_otp
 def initialize_driver():
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
+    options.add_argument("--headless=new")
     driver = webdriver.Chrome(options=options)
     return driver
 
@@ -83,8 +84,8 @@ def click_button_of_multiple(driver, index, class_name="styles_button__VMIgL"):
         buttons = WebDriverWait(driver, 20).until(
             EC.visibility_of_all_elements_located((By.CLASS_NAME, class_name))
         )
-        print(f"buttons are:\n{buttons}")
         if buttons:
+            # print(f"buttons are:\n{buttons}")
             buttons[index].click()  # Click the first button
         else:
             print("No buttons found with class name:", class_name)
@@ -95,6 +96,7 @@ def click_button_of_multiple(driver, index, class_name="styles_button__VMIgL"):
 def main():
     url_v1 = "https://login.noon.partners/en/?domain=https://ambassadors.noon.partners/en/coupons"
     url_v2 = "https://ambassadors.noon.partners/en/coupons?project=PRJ65632"
+    performance_page_url="https://ambassadors.noon.partners/en/performance?project=PRJ65632"
 
     # email = "Abdullah@monhna.com"
     email = "Noon-Affiliate@monhna.com"
@@ -104,17 +106,28 @@ def main():
     opt_input_class_name_v2 = "emailOtp"
 
     driver = initialize_driver()
-    open_page(driver, url_v2)
+    open_page(driver, performance_page_url)
+
+    # enter email
     enter_email(driver, email)
     click_button(driver, class_name=continue_button_class_name)
-    time.sleep(8)
+    time.sleep(10)
     otp = get_otp()
-    enter_otp_v2(driver=driver, otp=otp)
-    click_button(driver, class_name=continue_button_class_name)
-    click_button_of_multiple(driver=driver, index=0)
-    enter_copoun_details(driver, "TARIK", 10)
-    time.sleep(1)
-    click_button_of_multiple(driver=driver, index=5)
+    print(otp)
+
+    # enter otp
+    # enter_otp_v2(driver=driver, otp=otp)
+    # click_button(driver, class_name=continue_button_class_name)
+
+    #export sales sheet
+    # click_button_of_multiple(driver=driver, index=0)
+
+    # create coupons
+    # click_button_of_multiple(driver=driver, index=0)
+    # enter_copoun_details(driver, "TARIK", 10)
+    # time.sleep(1)
+    # click_button_of_multiple(driver=driver, index=5)
+
     # click_create_copoun_button(driver)
     # driver.quit()
 
